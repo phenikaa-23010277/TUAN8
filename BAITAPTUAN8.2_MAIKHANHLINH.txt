@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài Nộp - Website Bánh Mì Sourdough</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #a0522d;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h2 {
+      color: #4b2e2e;
+      margin-top: 2rem;
+    }
+    code, pre {
+      background: #f5f5f5;
+      padding: 0.5rem;
+      border-radius: 5px;
+      display: block;
+      overflow-x: auto;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #a0522d;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📦 Bài Nộp Website Sourdough</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>📹 Mô Tả Dự Án</h2>
+      <p><strong>Tên dự án:</strong> Website bán bánh Sourdough thủ công</p>
+      <p><strong>Mục tiêu:</strong> Thiết kế trang web giới thiệu và bán bánh, giao diện thân thiện, hỗ trợ đa thiết bị và có các tính năng nâng cao như giỏ hàng, tìm kiếm, chế độ tối.</p>
+      <p><strong>Công nghệ:</strong> HTML5, CSS3, JavaScript, LocalStorage, Formspree, Vercel.</p>
+    </section>
+
+    <section>
+      <h2>🔗 Liên Kết Trang Web</h2>
+      <p><a href="https://my-sourdough-bakery.vercel.app" target="_blank">https://my-sourdough-bakery.vercel.app</a></p>
+    </section>
+
+    <section>
+      <h2>✅ Bằng Chứng Đáp Ứng Yêu Cầu</h2>
+      <ul>
+        <li><strong>Tuân thủ W3C:</strong> Kiểm tra qua <a href="https://validator.w3.org/">validator.w3.org</a> ✅</li>
+        <li><strong>Responsive:</strong> Giao diện tương thích mọi thiết bị (mobile, tablet, desktop) ✅</li>
+        <li><strong>Được tạo kiểu tốt:</strong> CSS tuỳ chỉnh rõ ràng ✅</li>
+      </ul>
+      <h3>🎨 Ví dụ mã CSS</h3>
+      <pre><code>.product-card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+.product-card:hover {
+  transform: scale(1.03);
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>✨ Bốn Tính Năng Bổ Sung</h2>
+
+      <h3>1. 🔍 Tìm kiếm sản phẩm theo tên</h3>
+      <pre><code>const input = document.getElementById('search');
+input.addEventListener('input', () => {
+  const keyword = input.value.toLowerCase();
+  document.querySelectorAll('.product-card').forEach(card => {
+    const name = card.querySelector('.title').textContent.toLowerCase();
+    card.style.display = name.includes(keyword) ? 'block' : 'none';
+  });
+});</code></pre>
+
+      <h3>2. 🛒 Giỏ hàng sử dụng LocalStorage</h3>
+        <li>Tối ưu hiển thị trên thiết bị di động (responsive design).</li>
+        <li>Cải thiện khả năng truy cập: tăng độ tương phản, nhãn biểu mẫu đầy đủ.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🔗 Liên kết đến website</h2>
+      <p><a href="https://my-sourdough-bakery.vercel.app" target="_blank">https://my-sourdough-bakery.vercel.app</a></p>
+    </div>
+
+    <div class="section">
+      <h2>✅ Bằng chứng chất lượng trang</h2>
+      <ul>
+        <li><strong>Tuân thủ trình xác thực W3C:</strong> Ảnh chụp màn hình từ https://validator.w3.org (đính kèm).</li>
+        <li><strong>Đáp ứng (Responsive):</strong> Ảnh chụp hoặc video demo trên thiết bị di động (đính kèm).</li>
+        <li><strong>Được tạo kiểu tốt:</strong> CSS tuỳ chỉnh thể hiện rõ ràng (xem mã bên dưới).</li>
+      </ul>
+      <h3>🎨 Trích đoạn CSS tiêu biểu</h3>
+      <pre><code>.product-card {
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}</code></pre>
+    </div>
+
+    <div class="section">
+      <h2>✨ Bốn Tính Năng Bổ Sung</h2>
+
+      <h3>1. Tìm kiếm động sản phẩm</h3>
+      <pre><code>searchInput.addEventListener('input', () => {
+  const keyword = searchInput.value.toLowerCase();
+  document.querySelectorAll('.product-card').forEach(card => {
+    const title = card.querySelector('.title').textContent.toLowerCase();
+    card.style.display = title.includes(keyword) ? 'block' : 'none';
+  });
+});</code></pre>
+
+      <h3>2. Giỏ hàng lưu trong LocalStorage</h3>
+      <pre><code>let cart = JSON.parse(localStorage.getItem('cart')) || [];
+function addToCart(productId) {
+  cart.push(productId);
+  localStorage.setItem('cart', JSON.stringify(cart));
+}</code></pre>
+
+      <h3>3. Chế độ Dark Mode</h3>
+      <pre><code>function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}</code></pre>
+
+      <h3>4. Biểu mẫu liên hệ gửi qua Formspree</h3>
+      <pre><code><form action="https://formspree.io/f/your-form-id" method="POST">
+  <input type="text" name="name" required>
+  <input type="email" name="_replyto" required>
+  <textarea name="message"></textarea>
+  <button type="submit">Gửi</button>
+</form></code></pre>
+    </div>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('search');
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        const keyword = searchInput.value.toLowerCase();
+        document.querySelectorAll('.product-card').forEach(card => {
+          const title = card.querySelector('.title').textContent.toLowerCase();
+          card.style.display = title.includes(keyword) ? 'block' : 'none';
+        });
+      });
+    }
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    function addToCart(productId) {
+      cart.push(productId);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert('Đã thêm vào giỏ hàng!');
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
