@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh mục dự án - Tiệm Bánh Sourdough</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      transition: background 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background: #121212;
+      color: #f0f0f0;
+    }
+    header {
+      background: #a0522d;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #4b2e2e;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 1rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .product-card {
+      border: 1px solid #eaeaea;
+      border-radius: 1rem;
+      padding: 1rem;
+      transition: transform 0.3s ease-in-out;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .dark-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    textarea, input {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #4b2e2e;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+  <header>
+    <h1>Danh mục dự án - Tiệm Bánh Sourdough</h1>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2 class="hero-title">📹 Mô tả Dự Án</h2>
+      <p><strong>Dự án:</strong> Trang web giới thiệu và bán bánh mì Sourdough thủ công.</p>
+      <p><strong>Mục tiêu:</strong> Giao diện đẹp, dễ sử dụng, thân thiện với thiết bị di động và tối ưu trải nghiệm người dùng.</p>
+      <p><strong>Công nghệ sử dụng:</strong> HTML, CSS (thuần + Tailwind), JavaScript.</p>
+      <p><strong>Mẫu sử dụng:</strong> <a href="https://html5up.net/solid-state" target="_blank">HTML5 UP – Solid State</a></p>
+      <h3>✏️ Các thay đổi từ mẫu gốc:</h3>
+      <ul>
+        <li>Chuyển đổi nội dung sang tiếng Việt.</li>
+        <li>Tùy chỉnh phối màu phù hợp thương hiệu bánh mì.</li>
+        <li>Thêm dark mode, tìm kiếm sản phẩm và giỏ hàng bằng JavaScript.</li>
+        <li>Tối ưu hiển thị trên thiết bị di động (responsive design).</li>
+        <li>Cải thiện khả năng truy cập: tăng độ tương phản, nhãn biểu mẫu đầy đủ.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🔗 Liên kết đến website</h2>
+      <p><a href="https://my-sourdough-bakery.vercel.app" target="_blank">https://my-sourdough-bakery.vercel.app</a></p>
+    </div>
+
+    <div class="section">
+      <h2>✅ Bằng chứng chất lượng trang</h2>
+      <ul>
+        <li><strong>Tuân thủ trình xác thực W3C:</strong> Ảnh chụp màn hình từ https://validator.w3.org (đính kèm).</li>
+        card.style.display = title.includes(keyword) ? 'block' : 'none';
+      });
+    });
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    function addToCart(productId) {
+      cart.push(productId);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert('Đã thêm vào giỏ hàng!');
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
